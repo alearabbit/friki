@@ -13,27 +13,24 @@ body {
 </style>
 <!-- 이 페이지만 적용되는 스타일시트 종료 -->
 <div class="container">
-	<!-- 텍스트 세로 중앙정렬 -->
-	<div class="div_verticla_align_middle">
-		<!-- 텍스트 쉐도우, 텍스트 중앙정렬, 흰색  -->
-		<span style="text-shadow: 1px 1px 2px rgba(0,0,0,0.4)" class="text-center font_color_white">
-			<div class="div_margin_auto">
-				<a href="{{url_for("out_home")}}">
-					<img style="box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.3);" class="img-circle" width="150px" src="/static/img/logo_white.png"/>
-				</a>
-			</div>
-			<h1><strong>WELCOME TO HONEYDREAMLAB</strong></h1>
-			<h2><strong>Bucket Supporter. Honey Dream Lab.</strong></h2>
-			<!-- 버튼 가운데정렬, left, right Margin auto -->
-			<div class="div_margin_auto">
-				<a class="btn btn-primary btn-lg">
-					Learn more
-				</a>
-			</div>
-		</span>
-	</div>
-	<div style="margin-bottom:0%" class="div_margin_auto">
-		<p class="text-center">(c)2014 Myfriki Team</p>
-	</div>
+		<!-- 텍스트 세로 중앙정렬 -->
+		<div class="div_verticla_align_middle">
+			<!-- 텍스트 쉐도우, 텍스트 중앙정렬, 흰색  -->
+			<span style="text-shadow: 1px 1px 2px rgba(0,0,0,0.4)" class="text-center font_color_white">
+				<div class="div_margin_auto">
+					<a href="{{url_for("out_home")}}">
+						<img style="box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.3);" class="img-circle" width="150px" src="/static/img/logo_white.png"/>
+					</a>
+				</div>
+				<h1><strong>WELCOME TO HONEYDREAMLAB</strong></h1>
+				<h2><strong>Bucket Supporter. Honey Dream Lab.</strong></h2>
+				<!-- 버튼 가운데정렬, left, right Margin auto -->
+				<div class="div_margin_auto">
+					<a class="btn btn-primary btn-lg">
+						Learn more
+					</a>
+				</div>
+			</span>
+		</div>
 </div>
 {% endblock %}
