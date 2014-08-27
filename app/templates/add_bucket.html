@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block layout %}
+
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="col-md-3 navbar-header">
+            <a class="navbar-brand" href="#">Menu</a>
+        </div>
+        <div class="col-md-6 navbar-header">
+            <a class="navbar-brand" href="#">Logo</a>
+        </div>
+        <div class="col-md-3 navbar-header">
+            <a class="navbar-brand" href="#">Plus</a>
+        </div>
+    </div>
+</nav>
+
+<div class="write_bucket">
+	<h1>버킷등록하기</h1>
+	
+	<p>이름: </p><input type="text" name="bucket_name">
+	<p>내용: </p><input type="text" name="bucket_contents">
+	<p>사진</p><input type="file" name="photo">
+	<p>날짜</p>
+	<p>카테고리</p>
+	<p>중요도</p>	
+	<input type="submit" name="submit" value="등">
+
+
+</div>
+
+{% endblock %}

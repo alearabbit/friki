@@ -1,0 +1,96 @@
+.back-div {
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    margin-bottom: 20px;
+}
+.front-text {
+    position: relative;
+    color: white;
+    top: 50%;
+    left: 50%;
+}
+.main-chat-form {
+}
+.circle {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: table;
+}
+.login {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.chat-menu {
+    background-color: #1e90ff;
+    width: 100%;
+    height: 100px;
+}
+.menu-text {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.chat-body {
+    background-color: #F5F5F5;
+    height: 1000px;
+}
+#chat-login {
+    background-color: white;
+    margin-top: 20px;
+}
+.login-title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#login-box {
+    border-radius: 3px;
+    border-width: 2px;
+}
+#login-button {
+    background-color: #1e90ff;
+    width: 50px;
+    height: 25px;
+    border-radius: 4px;
+    border-color: #1e90ff;
+}
+#chat {
+/*    display: none;*/
+    background-color: white;
+    border-width: 10px;
+    width: 600px;
+    height: 600px;
+}
+.chat-left {
+    border: 1px solid black;
+    height: 300px;
+    overflow-y: scroll;
+    word-wrap: break-word;
+/*    word-wrap: normal;*/
+/* word-wrap = 행갈이 , break-word:행갈이 적용, normal:미적용 */
+}
+.chat-right {
+    border: 1px solid black;
+    height: 300px;
+    overflow-y: scroll;
+}
+#input-chat {
+    width: 540px;
+    border-radius: 3px;
+    border-width: 2px;    
+}
+#chat-button {
+    background-color: #1e90ff;
+    width: 50px;
+    height: 25px;
+    border-radius: 4px;
+    border-color: #1e90ff;
+}
+
