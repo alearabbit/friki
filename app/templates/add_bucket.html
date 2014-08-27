@@ -1,19 +1,6 @@
 {% extends "base.html" %}
 {% block layout %}
-
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
-    <div class="container">
-        <div class="col-md-3 navbar-header">
-            <a class="navbar-brand" href="#">Menu</a>
-        </div>
-        <div class="col-md-6 navbar-header">
-            <a class="navbar-brand" href="#">Logo</a>
-        </div>
-        <div class="col-md-3 navbar-header">
-            <a class="navbar-brand" href="#">Plus</a>
-        </div>
-    </div>
-</nav>
+{% include "navbar.html" %}
 
 <div class="write_bucket">
 	<h1>버킷등록하기</h1>
