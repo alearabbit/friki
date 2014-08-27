@@ -11,6 +11,10 @@ def index():
     return render_template('out_home.html')
 
 
+@app.route('/out_home')
+def out_home():
+    return render_template('out_home.html')
+
 @app.route('/chat')
 def chat():
     return render_template('chat.html')
@@ -20,6 +24,7 @@ def login():
     return facebook.authorize(callback=url_for('facebook_authorized',
         next=request.args.get('next') or request.referrer or None,
         _external=True))
+
 
 
 
@@ -41,9 +46,12 @@ def facebook_authorized(resp):
     return redirect(url_for('chat'))
 
 
+
 @facebook.tokengetter
 def get_facebook_oauth_token():
     return session.get('oauth_token')
+
+
 
 
 @app.route('/pusher/auth', methods=['POST'])
