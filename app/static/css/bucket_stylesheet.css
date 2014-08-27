@@ -19,7 +19,7 @@ h2 {
 	line-height: 60px;
 }
 /*폰트컬러 흰색으로*/
-.font_color_white {
+.text_color_white {
 	color: white;
 	/*	opacity: 60%;*/
 }
@@ -37,4 +37,7 @@ h2 {
 	border-radius: 5px; 
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px; 
+}
+.text_shadow {
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
 }
