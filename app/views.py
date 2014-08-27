@@ -60,6 +60,12 @@ def navbar():
 def add_bucket():
     return render_template('add_bucket.html')
 
+@app.route('/main_bucket')
+def main_bucket():
+    return render_template('main_bucket.html')
+
+
+
 
 # @app.route('/pusher/auth', methods=['POST'])
 # def push_auth():
