@@ -2,20 +2,44 @@
 {% block layout %}
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container">
-        <div class="col-md-3 navbar-header">
-            <a class="navbar-brand" href="#">Logo</a>
+        <div class="navbar-brand">
+            <a href="{{ url_for('out_home') }}"><span style="font-family:Helvetica;"><strong>HDL</strong></span></a>
         </div>
-          <div class="col-md-3 navbar-header">
-            <a class="navbar-brand" href="#">  </a>
-        </div>
-        <div class="col-md-3 navbar-header">
-            <a class="navbar-brand" href="#">About</a>
-        </div>
-        <div class="col-md-3 navbar-header">
-            <a class="navbar-brand" href="#">Sign In</a>
-        </div>
-      
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="{{ url_for('index') }}">menu</a></li>
+            <li><a href="{{ url_for('index') }}">about</a></li>
+            <li><a href="{{ url_for('index') }}">help</a></li>
+            <li><a href="{{ url_for('index') }}">wow</a></li>
+
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+                <span id="login_form_display">
+                    <div class="input-group">
+                        <a class="btn btn-block btn-social btn-facebook" href="{{ url_for('login')}}">
+                            <i class="fa fa-facebook"></i>Sign In With Facebook
+                        </a>
+                    </div>
+                </span>
+            </div>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <p id="hello_msg" class="navbar-text pull-right">Hello~<a href="#">UserName</a></p>
+        </ul>
     </div>
 </nav>
-
 {% endblock %}
