@@ -33,3 +33,8 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 }
+.round_img_shadow {
+	border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+}
