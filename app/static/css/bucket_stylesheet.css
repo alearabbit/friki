@@ -1,0 +1,20 @@
+/*웹폰트 나눔고딕 불러오기*/
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body {
+	font-family: "Nanum Gothic", sans-serif;
+}
+
+/* H1폰트 굵고 크게만들기*/
+h1 {
+	font-weight: bold;
+	font-size: 85px;
+}
+h2 {
+	font-weight: bold;
+	font-size: 34px;
+}
+.font_color_white {
+	color: white;
+/*	opacity: 60%;*/
+}

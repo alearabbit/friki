@@ -1,16 +1,42 @@
 {% extends "base.html" %}
 {% block layout %}
+
+<!-- 아래의 스타일시트는 이 페이지에만 적용되는 스타일시트임 -->
+<style>
+html {
+	height: 100%;
+}
+body { 
+	background: url('/static/img/out_hone_bg_01.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+</style>
+<!-- 이 페이지만 적용되는 스타일시트 종료 -->
+
+<div>
+	<span class="text-center font_color_white"><h1><strong>안경 꿀버키!</strong></h1></span>
+	<span class="text-center font_color_white"><h2><strong>안녕프리키의 사이트입니다. 지금은 H2테스트중!</strong></h2></span>
+</div>
+
+
+
 <div class="out_home">
-	<div class="out_home_img">
-		
-	</div>
+	<div class="out_home_background_img"></div>
+
 	<div class="login row">
-		<div class="col-md-4 login">
+		<div class="login">
 			<a  class="btn btn-block btn-social btn-facebook" href="{{ url_for('login') }}">
 				<i class="fa fa-facebook"></i>Facebook</a>		
+			</div>
+
 		</div>
-		
+
 	</div>
-	
 </div>
 {% endblock %}
