@@ -43,7 +43,7 @@ def facebook_authorized(resp):
     session['user_id'] = me.data['id']
     session['user_link'] = me.data['link']
 
-    return redirect(url_for('navbar'))
+    return redirect(url_for('main_bucket'))
 
 
 
