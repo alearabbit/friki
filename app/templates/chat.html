@@ -1,0 +1,38 @@
+
+{% extends "base.html" %}
+{% block layout %}
+
+<a class="btn btn-block btn-social btn-facebook" href="{{ url_for('login') }}">
+    <i class="fa fa-facebook"></i>Sign In With Facebook
+</a>
+<!-- <div class="row" id="chat-menu">
+    <p class="menu-text">Chat Up</p>
+</div> -->
+
+
+<div class="chat-body">
+    <div id="chat">
+        <div class="row">
+            <div class="col-md-8 chat-left" id="chat-room">
+                <table id="chat-table">
+                </table>
+            </div>
+            <div class="col-md-4 chat-right" id="user-room">
+                <h2 style="text-align:center">접속 자</h2>
+            </div>
+        </div><br>
+
+        <div>
+            <input type="text" id="input-chat" name="input-chat" placeholder="Input Text">
+            <input id="chat-button" type="submit" value=" 입력 ">
+        </div>
+    </div>
+
+</div>
+
+<div class="bottom">
+    <p class="bottom-copyright">Copyright 2014 My Company. All Right Reserved.</p>
+    <p class="bottom-copyright">Serviced by Jihyo.</p>
+</div>
+
+{% endblock %}
