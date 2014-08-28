@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
-from flask import request, render_template, jsonify, session, redirect, url_for
-from app import app, facebook
+from flask import request, render_template, jsonify, session, redirect, url_for, flash
+from app import app, facebook, db
 import pusher
 from datetime import datetime
 from time import time
+from app.models import User, Bucket
 
 
 
@@ -42,8 +43,18 @@ def facebook_authorized(resp):
     session['username'] = me.data['name']
     session['user_id'] = me.data['id']
     session['user_link'] = me.data['link']
+    session['email'] = me.data['email']
+ 
+    user = User(
+        name = me.data['name'],
+        email = me.data['email'],
+        access_token_facebook = session['oauth_token']
+    )
+    db.session.add(user)
+    db.session.commit()
 
     return redirect(url_for('main_bucket'))
+
 
 
 

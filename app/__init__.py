@@ -1,5 +1,8 @@
 from flask import Flask
 from flask_oauth import OAuth
+from flask.ext.sqlalchemy import SQLAlchemy
+from flask.ext.migrate import Migrate, MigrateCommand
+from flask.ext.script import Manager
 import settings
 
 
@@ -19,7 +22,10 @@ facebook = oauth.remote_app('facebook',
     request_token_params={'scope': 'email'}
     )
 
+db = SQLAlchemy(app)
+manager = Manager(app)
+migrate = Migrate(app, db)
+manager.add_command('db', MigrateCommand)
 
-import views
-
+import views, models
 
