@@ -4,7 +4,7 @@ from app import app, facebook, db
 import pusher
 from datetime import datetime
 from time import time
-from app.models import User, Bucket
+from app.models import User
 
 
 

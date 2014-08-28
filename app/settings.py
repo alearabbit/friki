@@ -11,3 +11,7 @@ class Config(object):
 
 class Production(Config):
     DEBUG = True
+    CSRF_ENABLED = False
+    ADMIN = "myfriki@gmail.com"
+    SQLALCHEMY_DATABASE_URI = "mysql+gaerdbms:///flaskr?instance=myfriki:flaskr-instance"
+    migration_directory = "migrations"
