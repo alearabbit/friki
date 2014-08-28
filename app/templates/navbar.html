@@ -1,23 +1,41 @@
 {% extends "base.html" %}
 {% block layout %}
+<style type="text/scripts">
+$(documents).ready(function(){
+	$('.dropdown-toggle').dropdown()
+	})
+
+</style>
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div class="container">
 		<div class="navbar-brand">
-			<a href="{{ url_for('out_home') }}"><span style="font-family:Helvetica;"><strong>
-				<img src="/static/img/logo_color.png" height="100%"/>
-
-				HoneyDreamLAB</strong></span></a>
-			</div>
-			
-			<div class="btn-group pull-right">
-				<button style="margin-top:3px; margin-bottom:3px;" type="button" class="btn btn-default btn-lg">
-					<span class="glyphicon glyphicon-plus-sign"></span>
-				</button>
-				<button style="margin-top:3px; margin-bottom:3px;" type="button" class="btn btn-default btn-lg">
-					<span class="glyphicon glyphicon-align-justify"></span>
-				</button>
-			</div>
+			<a href="{{ url_for('out_home') }}">
+				<span style="font-family:Helvetica;">
+					<strong>
+						<img src="/static/img/logo_color.png" height="100%"/>
+						HoneyDreamLAB
+					</strong>
+				</span>
+			</a>
+		</div>
+		<div class="btn-group pull-right">
+			<button style="margin-top:3px; margin-bottom:3px;" type="button" class="btn btn-default btn-lg">
+				<span class="glyphicon glyphicon-plus-sign"></span>
+			</button>
+			<button style="margin-top:3px; margin-bottom:3px;" type="button" class="btn btn-default btn-lg">
+				<span class="glyphicon glyphicon-align-justify"></span>
+			</button>
 		</div>
 	</div>
+</div>
+</nav>
+
+<nav style="background-color: transparent;
+background: transparent;" class="navbar navbar-reverse navbar-fixed-bottom">
+<div class="container">
+	<div class="pull-right">
+		<p class="text-right" style="color:white;">(C)2014 Friki team. All rights reserved.</p>
+	</div>
+</div>
 </nav>
 {% endblock %}
