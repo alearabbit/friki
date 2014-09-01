@@ -3,3 +3,6 @@
 lib/
 !lib/README.md
 .DS_Store
+deploy.py
+app.yaml
+appengine_config.py
