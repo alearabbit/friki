@@ -1,33 +1,122 @@
 {% extends "base.html" %}
 {% block layout %}
 {% include "navbar.html" %}
-<div class="row">
-    <div class="col-md-10 col-md-offset-1">
-        <div class="cover-photo">
+<!-- 아래의 스타일시트는 이 페이지에만 적용되는 스타일시트임 -->
+<style>
+body { 
+	background: url('/static/img/out_home_bg_01.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+</style>
+<!-- 이 페이지만 적용되는 스타일시트 종료 -->
+<div style="margin-top:100px" class="container">
 
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-2 col-md-offset-1 div-profile">
-            <p>profile</p>
-        </div>
-        <div class="col-md-2 div-list">
-            <p>list</p>
+	<div class="col-xs-4 col-sm-2">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			<img src="/static/img/test_img/number1.png" width="100%" alt=""/>
+			<ul class="dropdown-menu col-xs-12 col-sm-12" role="menu">
+				<div style="margin:20px">
+					<h3>Profile</h3>
+					<li><a href="#">Text01</a></li>
+					<li><a href="#">Text02</a></li>
+					<li><a href="#">Text03</a></li>
+					<li class="divider"></li>
+					<li><a href="#">etc.</a></li>
+				</div>
+			</ul>
+		</button></a>
+	</div>
+	
+	<div class="col-xs-4 col-sm-2">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			<img src="/static/img/test_img/number2.png" width="100%" alt=""/>
+			<ul class="dropdown-menu col-xs-12 col-sm-12" role="menu">
+				<div style="margin:20px">
+					<h3>List</h3>
+					<li><a href="#">Text01</a></li>
+					<li><a href="#">Text02</a></li>
+					<li><a href="#">Text03</a></li>
+					<li class="divider"></li>
+					<li><a href="#">etc.</a></li>
+				</div>
+			</ul>
+		</button></a>
+	</div>
 
-        </div>
-        <div class="col-md-2 div-leader">
-            <p>leader</p>
+	<div class="col-xs-4 col-sm-2">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			<img src="/static/img/test_img/number3.png" width="100%" alt=""/>
+			<ul class="dropdown-menu col-xs-12 col-sm-12" role="menu">
+				<div style="margin:20px">
+					<h3>Leader</h3>
+					<li><a href="#">Text01</a></li>
+					<li><a href="#">Text02</a></li>
+					<li><a href="#">Text03</a></li>
+					<li class="divider"></li>
+					<li><a href="#">etc.</a></li>
+				</div>
+			</ul>
+		</button></a>
+	</div>
 
-        </div>
-        <div class="col-md-2 div-completed">
-            <p>completed</p>
+	<div class="col-xs-4 col-sm-2">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			<img src="/static/img/test_img/number1.png" width="100%" alt=""/>
+			<ul class="dropdown-menu col-xs-12 col-sm-12" role="menu">
+				<div style="margin:20px">
+					<h3>Completed</h3>
+					<li><a href="#">Text01</a></li>
+					<li><a href="#">Text02</a></li>
+					<li><a href="#">Text03</a></li>
+					<li class="divider"></li>
+					<li><a href="#">etc.</a></li>
+				</div>
+			</ul>
+		</button></a>
+	</div>
+	
+	<div class="col-xs-4 col-sm-2">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			<img src="/static/img/test_img/number2.png" width="100%" alt=""/>
+			<ul class="dropdown-menu col-xs-12 col-sm-12" role="menu">
+				<div style="margin:20px">
+					<h3>Doing</h3>
+					<li><a href="#">Text01</a></li>
+					<li><a href="#">Text02</a></li>
+					<li><a href="#">Text03</a></li>
+					<li class="divider"></li>
+					<li><a href="#">etc.</a></li>
+				</div>
+			</ul>
+		</button></a>
+	</div>
 
-        </div>
-        <div class="col-md-2 div-doing">
-            <p>doing</p>
-        </div>
-    </div>
+	<div class="col-xs-4 col-sm-2">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			<img src="/static/img/test_img/number3.png" width="100%" alt=""/>
+			<ul class="dropdown-menu col-xs-12 col-sm-12" role="menu">
+				<div style="margin:20px">
+					<h3>UserMenu</h3>
+					<li><a href="#">Text01</a></li>
+					<li><a href="#">Text02</a></li>
+					<li><a href="#">Text03</a></li>
+					<li class="divider"></li>
+					<li><a href="#">etc.</a></li>
+				</div>
+			</ul>
+		</button></a>
+	</div>
+
+	<div style="background-color:white; border-radius:10px; margin-top:40px;" class="col-xs-12 col-sm-12">
+		<h2>Bucket Title</h2><p>yy-mm-dd / hh:mm day</p>
+		<p>Contents</p>
+		<p class="text-right">
+			<a href="#">Edit</a>
+			<a href="#">Delete</a>
+		</p>
+	</div>
 </div>
 {% endblock %}
