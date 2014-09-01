@@ -6,8 +6,8 @@
 # TODO: Enter your application id below. If you have signed up
 # using cloud.google.com/console use the "project id" for your application
 # id.
-application: handy-coast-681
-version: 2
+application: myfriki
+version: 1
 runtime: python27
 api_version: 1
 threadsafe: yes
