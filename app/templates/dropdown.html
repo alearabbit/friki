@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown Menu</title>
+ 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap-facebook.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+ 
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}"/>
+ 
+    <script src="{{ url_for('static', filename='js/jquery-1.11.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bucket.js') }}"></script>
+ 
+ 
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+ 
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap-social.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bucket_stylesheet.css') }}">
+    
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a data-toggle="dropdown" href="{{ url_for('out_home') }}"><span style="font-family:Helvetica;"><strong>HDL</strong></span></a>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="{{ url_for('index') }}">menu</a></li>
+                    <li><a href="{{ url_for('index') }}">about</a></li>
+                    <li><a href="{{ url_for('index') }}">help</a></li>
+                    <li><a href="{{ url_for('index') }}">My Bucket</a></li>
+ 
+                </ul>
+            </div>
+ 
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <span id="login_form_display">
+                        <div class="input-group">
+                            <a class="btn btn-block btn-social btn-facebook" href="{{ url_for('login')}}">
+                                <i class="fa fa-facebook"></i>Sign In With Facebook
+                            </a>
+                        </div>
+                    </span>
+ 
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Make Bucket</a></li>
+                                <li><a href="#">Make Note</a></li>
+                                <li><a href="#">Settings</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+ 
+ 
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+                <p id="hello_msg" class="navbar-text pull-right">Hello~<a href="#">UserName</a></p>
+            </ul>
+        </div>
+    </nav>
+ 
+    <div class="dropdown">
+        <a data-toggle="dropdown" href="#">메뉴버튼</a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <ul><a href="">About</a></ul>
+            <ul><a href="">마이버킷</a></ul>
+            <ul><a href="">도움말</a></ul>
+        </ul>
+    </div>
+ 
+    <div class="dropdown">
+        <a data-toggle="dropdown" href="#">등록버튼</a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <ul><a href="">버킷등록</a></ul>
+            <ul><a href="">메모등록</a></ul>
+        </ul>
+    </div>
+ 
+</body>
+</html>
