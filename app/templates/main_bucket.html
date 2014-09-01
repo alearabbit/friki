@@ -1,50 +1,33 @@
 {% extends "base.html" %}
 {% block layout %}
-
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
-    <div class="container">
-        <div class="col-md-3 navbar-header">
-            <a class="navbar-brand" href="#">Menu</a>
-        </div>
-        <div class="col-md-6 navbar-header">
-            <a class="navbar-brand" href="#">Logo</a>
-        </div>
-        <div class="col-md-3 navbar-header">
-            <a class="navbar-brand" href="#">Plus</a>
-        </div>
-    </div>
-</nav>
-
+{% include "navbar.html" %}
 <div class="row">
     <div class="col-md-10 col-md-offset-1">
         <div class="cover-photo">
-            
+
         </div>
     </div>
 </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 col-md-offset-1 div-profile">
+            <p>profile</p>
+        </div>
+        <div class="col-md-2 div-list">
+            <p>list</p>
 
-<div class="row">
-    <div class="col-md-2 col-md-offset-1 div-profile">
-        <p>profile</p>
+        </div>
+        <div class="col-md-2 div-leader">
+            <p>leader</p>
 
-    </div>
-    <div class="col-md-2 div-list">
-        <p>list</p>
-        
-    </div>
-    <div class="col-md-2 div-leader">
-        <p>leader</p>
-        
-    </div>
-    <div class="col-md-2 div-completed">
-        <p>completed</p>
-        
-    </div>
-    <div class="col-md-2 div-doing">
-        <p>doing</p>
-        
+        </div>
+        <div class="col-md-2 div-completed">
+            <p>completed</p>
+
+        </div>
+        <div class="col-md-2 div-doing">
+            <p>doing</p>
+        </div>
     </div>
 </div>
-
-
 {% endblock %}
