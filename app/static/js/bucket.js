@@ -1,4 +1,6 @@
 $(document).ready(function (){
+    $('.dropdown-toggle').dropdown()
+
     pusher = new Pusher('dd2181a309fb7773ac46');
     
     my_channel.bind('pusher:member_added', function(member){

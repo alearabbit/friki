@@ -48,7 +48,7 @@ def facebook_authorized(resp):
     user = User(
         name = me.data['name'],
         email = me.data['email'],
-        access_token_facebook = session['oauth_token']
+        access_token_facebook = resp['access_token']
     )
     db.session.add(user)
     db.session.commit()
