@@ -6,3 +6,4 @@ lib/
 deploy.py
 app.yaml
 appengine_config.py
+manager.py
