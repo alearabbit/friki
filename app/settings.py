@@ -6,10 +6,11 @@ class Config(object):
     FACEBOOK_APP_ID ="1526648867568157"
     FACEBOOK_APP_SECRET = "69358ce6138c07c33f102af172a3835f"
 
-    debug = False
+    DEBUG = False
 
 
 class Production(Config):
+
     DEBUG = True
     CSRF_ENABLED = False
     ADMIN = "myfriki@gmail.com"
